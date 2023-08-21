@@ -2,6 +2,7 @@
   "root": "packages/cli",
   "sourceRoot": "packages/cli/src",
   "projectType": "application",
+  "implicitDepencencies":["ascii"],
   "targets": {
     "build": {
       "executor": "nx:run-commands",
@@ -16,10 +17,6 @@
         "command": "go run ./src/ascii.go",
         "cwd": "packages/cli"
       }
-    },
-    "scripts": {
-      "build": "go build -o ../../dist/packages/cli/ ./src/ascii.go",
-      "serve": "go run ./src/ascii.˙go"
     }
   }
 }

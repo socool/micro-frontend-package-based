@@ -18,5 +18,10 @@
     "build": {
       "dependsOn": ["^build"]
     }
+  },
+  "pluginsConfig": {
+    "@nx/js": {
+      "analyzeSourceFiles": true
+    }
   }
 }
